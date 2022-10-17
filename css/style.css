@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+	text-align: center;
+}
+
+body{
+	width: 450px;
+	margin: 0 auto;
+	background: url(../img/background-3.png);
+}
+
+h1{
+	color: white;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: bold;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+
+#box{
+	width: 410px;
+	height: 225px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	background:  rgba(40, 1, 39, 0.7);
+	border-radius: 10px;
+
+}
+
+.input{
+	margin: 10px;
+}
+
+.botao{
+	padding: 16px 80px;
+	margin-top: 18px;
+	border: 5px solid #ffffff;
+	background: rgba(58, 2, 56, 0.7);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 90px;
+}
+
+.botao:hover{
+	color: rgba(58, 2, 56);
+	background: #ffecf9;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+
+input[type="date"]{
+	padding: 10px 30px;
+	margin-bottom: 10px;
+	font-family: 'Comfortaa', cursive;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	background: white;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;     
+}
+
+.card{
+    background: var(--bckgr-color-cards);
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: var(--sombra);
+    max-width: 45rem;
+}
+
+.card img{
+    width: auto;
+    height: 250px;
+    margin: 0 auto;
+    
+}
+
+.card .signoNome{
+    color: rgb(255, 255, 255);
+    font-family: var(--fonte-familia-logo);
+    font-size: var(--fonte-tamanho-signoNome);
+    padding-top: 50px;
+}
+
+.card .data{
+    color: rgba(255, 255, 255, 0.822);
+    font-size:0.8rem; 
+    font-style: oblique;
+    padding-bottom: 0;
+}
+
+.card p{
+    color: rgba(255, 255, 255, 0.822);
+    font-size:.95rem;
+    padding: 0 1.75rem 1.75rem;
+    text-align:justify; 
+}
+
+@media screen and (max-width: 450px){
+    #cards{
+        padding: 5rem 0 0 2.5rem;
+    }
+}
